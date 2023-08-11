@@ -1,1 +1,138 @@
-#intro{}
+#intro {
+    background-color: var(--darkblue-color);
+    color: var(--white);
+}
+
+
+.intro-inner {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow-x: hidden;
+}
+.parallax__item__desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+}
+#about-fla01{
+    left: 86vw;
+    top: 250vh;
+}
+#about-fla02{
+    left: 25vw;
+    top: 19vh;
+}
+#about-fla03{
+    left: 12vw;
+    top: 120vh;
+}
+#about-fla04{
+    left: 85vw;
+    top: 82vh;
+    z-index: 8;
+}
+#about-fla06{
+    left: 40vw;
+    top: 165vh;
+}
+
+
+
+.intro-title {
+    position: sticky;
+    top: 130px;
+    left: 0;
+    width: 30%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    border-bottom: 0.4vw solid var(--white);
+}
+
+.intro-desc {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+}
+
+.intro-item {
+    display: flex;
+    margin-bottom: 200px;
+    align-items: center;
+}
+
+.intro-item:nth-child(2n) .intro-pic {
+    order: 2;
+}
+
+.intro-item:nth-child(2n) .intro-txt {
+    text-align: right;
+}
+
+.intro-item:nth-child(2n) .intro-txt p {
+    display: inline-block;
+}
+
+.intro-pic {
+    position: relative;
+    flex: 1;
+}
+
+.intro-pic img {
+    position: relative;
+    z-index: 10;
+    width: 70%;
+    padding: 15px;
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+}
+
+.intro-frame {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 100%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) rotate(-6deg);
+    background: #fcf8f0;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+
+}
+
+.intro-txt {
+    flex: 1;
+    font-family: var(--mainKor-font);
+}
+
+.intro-txt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    position: relative;
+}
+
+.intro-txt em{
+    color: var(--lightpink-color);
+    font-weight: 600;
+}
+
+.intro-txt p {
+    width: 520px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
