@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다." />
-    <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy" />
+    <meta name="description" content="구직용 포트폴리오 사이트입니다." />
+    <meta name="keyword" content="포트폴리오, portfolio, 웹퍼블리셔" />
     <title>Chanryeong's Portfolio</title>
 
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <audio id="bgm" loop>
+        <source src="assets/img/Harry_Styles_-_Watermelon_Sugar__lyrics.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="playbuttons">
+        <button id="playButton"><i class="fa-solid fa-play"></i></button>
+        <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
+    </div>
     <div id="skip">
         <a href="#header">헤더 영역 바로가기</a>
-        <a href="#visual">비쥬얼 영역 바로가기</a>
+        <a href="#visual">홈 영역 바로가기</a>
         <a href="#intro">소개 영역 바로가기</a>
         <a href="#port1">최애 포트폴리오 바로가기</a>
         <a href="#port2">그외 포트폴리오 바로가기</a>
@@ -31,12 +42,11 @@
             </div>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#visual">Top</a></li>
+                    <li><a href="#visual">Home</a></li>
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#port1">Portfolio1</a></li>
                     <li><a href="#port2">Portfolio2</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#footer">Footer</a></li>
                 </ul>
             </nav>
             <div class="header-nav-mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="false"
@@ -46,37 +56,74 @@
         </div>
     </header>
     <!-- //header -->
-
+    <!-- normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn -->
     <main id="main" role="main">
+
         <section id="visual">
-            skill
+            <div class="visual-inner">
+                <div class="visual-title">
+                    <em>R</em>yeong's<br>
+                    <span><em style="color: var(--darkgreen-color)">P</em>ortfolio</span>
+                </div>
+                <div class="visual-wrap" aria-hidden="true">
+                    <div class="img" id="img1">
+                        <img src="assets/img/flamingo-01.svg" alt="플라밍고" />
+                    </div>
+                    <div class="img" id="img2">
+                        <img src="assets/img/flamingo-02.png" alt="플라밍고" />
+                    </div>
+                    <div class="img" id="img3">
+                        <img src="assets/img/watermelon.png" alt="수박" />
+                    </div>
+                    <div class="img" id="img4">
+                        <img src="assets/img/left_tree.svg" alt="왼쪽나무" />
+                    </div>
+                    <div class="img" id="img5">
+                        <img src="assets/img/right_tree.svg" alt="오른쪽나무" />
+                    </div>
+                    <div class="waves">
+                        <div class="wave" id="wave1"></div>
+                        <div class="wave" id="wave2"></div>
+                        <div class="wave" id="wave3"></div>
+                        <div class="wave" id="wave4"></div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- skill end -->
 
         <section id="intro">
-            intro
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt iste adipisci, sunt ratione expedita nulla tempore et? Earum voluptates distinctio consectetur nostrum id impedit cupiditate, illum, perspiciatis dignissimos fugit libero!</p>
         </section>
         <!-- intro end -->
 
 
         <section id="port1">
-            site
         </section>
         <!-- site end -->
 
         <section id="port2">
-            port
         </section>
 
         <section id="contact">
-            contact
         </section>
         <!-- contact end -->
     </main>
     <!-- //main -->
 
     <footer id="footer" role="contentinfo">
-        footer
+
     </footer>
     <!-- //footer -->
 

@@ -24,13 +24,28 @@
 .header-logo em {
     font-size: 12px;
     display: block;
-    color: hotpink;
+    color: var(--darkpink-color);
 }
 
 .header-nav ul li {
     display: inline-block;
+    position: relative;
 }
 
+.header-nav ul li:hover{
+    color: var(--darkblue-color);
+}
+.header-nav ul li:hover::after{
+    content: "\f043"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    font-size: 13px;
+    position: absolute;
+    top:-17px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
 .header-nav li a {
     font-size: 1rem;
     padding: 1rem;
@@ -86,12 +101,15 @@
         display: block;
 
     }
-    .header-nav.show + .header-nav-mobile span::before{
+
+    .header-nav.show+.header-nav-mobile span::before {
         width: 30px;
     }
-    .header-nav.show + .header-nav-mobile span::after{
+
+    .header-nav.show+.header-nav-mobile span::after {
         width: 30px;
     }
+
     .header-nav.show ul {
         display: block;
         position: absolute;
