@@ -1,0 +1,96 @@
+#port-js {
+    width: 100%;
+    margin-top: 30vh;
+    overflow: hidden;
+}
+.port-js-inner {
+    padding: 16px;
+}
+.port-js-title {
+    width: 100%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 0.3vw solid var(--black100);
+    margin-bottom: 16px;
+    text-indent: -0.26vw;
+}
+.port-js-title em {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+.port-js-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 7000px;
+}
+.port-js-item {
+    width: 600px;
+    height: 70vh;
+    background-color: var(--white);
+    padding: 2.5rem;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.port-js-item .img {
+    display: block;
+    margin-top: 40px;
+    transition: margin-top 0.3s;
+    margin-bottom: 1rem;
+}
+.port-js-item:hover .img {
+    margin-top: 0;
+}
+.port-js-item .img img {
+    border-radius: 5px;
+    filter: saturate(0%);
+    transition: all 0.3s;
+}
+.port-js-item .img:hover img {
+    filter: saturate(100%)
+}
+.port-js-item .title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-weight: 700;
+    color: var(--black100);
+    border-bottom: 2px solid var(--black100);
+    margin-bottom: 1rem;
+}
+.port-js-item .desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.js-btns{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+.js-btn{
+    display: inline-block;
+    color: var(--darkpink-color);
+    border: 1px solid var(--darkpink-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+
+
+
+.js-btn:hover {
+    background-color: var(--darkpink-color);
+    color: var(--white);
+}

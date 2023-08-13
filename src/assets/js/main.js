@@ -83,7 +83,7 @@ targets.forEach((target) => {
   });
 });
 
-gsap.utils.toArray(".parallax__item__desc").forEach(item => {
+gsap.utils.toArray(".parallax-item-desc").forEach(item => {
   gsap.to(item, {
       yPercent: -100,
       ease: "none",
@@ -97,3 +97,49 @@ gsap.utils.toArray(".parallax__item__desc").forEach(item => {
   });
 });
 
+const horSection = gsap.utils.toArray(".port-js-item");
+
+gsap.to(horSection, {
+  xPercent: -120 * (horSection.length - 1),
+  ease: "none",
+  scrollTrigger: {
+      trigger: "#port-js",
+      start: "top 56px",
+      end: "+=3000",
+      pin: true,
+      scrub: 1,
+      markers: false,
+      invalidateOnRefresh: true,
+      anticipatePin: 1,
+  },
+});
+
+function handleScroll() {
+  var scrollY = window.scrollY || window.pageYOffset;
+  var scrollHeightElement = document.getElementById("scrollHeight");
+  scrollHeightElement.textContent = "" + scrollY;
+}
+
+// scroll 이벤트 리스너 추가
+window.addEventListener("scroll", handleScroll);
+
+
+const btnPrimaryBtnCart = document.querySelector(".like");
+const cartConfirm = document.querySelector(".chat");
+
+btnPrimaryBtnCart.addEventListener("click", function () {
+  cartConfirm.style.display = "block";
+  
+  setTimeout(function () {
+    cartConfirm.style.display = "none";
+  }, 2500);
+});
+
+const closeButtons = document.querySelectorAll(".close-buttons");
+const frontEventBanner = document.querySelector(".flip-card");
+
+closeButtons.forEach(button => {
+  button.addEventListener("click", function () {
+    frontEventBanner.classList.add("fade-out");
+  });
+});

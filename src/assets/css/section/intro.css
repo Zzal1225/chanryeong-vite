@@ -1,18 +1,34 @@
 #intro {
-    background-color: var(--darkblue-color);
     color: var(--white);
+    position: relative;
+
 }
 
 
+#neon{
+    position: absolute;
+    top: 73%;
+    left: 10%;
+    width: 300px;
+    opacity: 0;
+}
+
+#neon2{
+    position: absolute;
+    top: 68%;
+    right: 7%;
+    width: 450px;
+    opacity: 0;
+}
 .intro-inner {
     width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     position: relative;
-    overflow-x: hidden;
+
 }
-.parallax__item__desc{
+.parallax-item-desc{
     position: absolute;
     top: 0;
     left: 0;
@@ -22,14 +38,17 @@
     left: 86vw;
     top: 250vh;
 }
-#about-fla02{
-    left: 25vw;
-    top: 19vh;
+
+#about-fla0{
+    position: fixed;
+    top: 10vw;
+    left: 0;
 }
 #about-fla03{
-    left: 12vw;
-    top: 120vh;
+    left: 25vw;
+    top: 4vh;
 }
+
 #about-fla04{
     left: 85vw;
     top: 82vh;
@@ -132,7 +151,7 @@
 
 .intro-txt p {
     width: 520px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.6;
 }
 

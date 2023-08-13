@@ -1,26 +1,4 @@
-.playbuttons {
-    position: fixed;
-    top: 11%;
-    left: 0;
-    padding: 0 20px;
-    z-index: 99999;
-}
 
-.playbuttons button {
-    width: 35px;
-    height: 35px;
-    line-height: 1;
-    border: 1px solid var(--lightblue-color);
-    border-radius: 100%;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 1vw;
-    color: var(--lightblue-color);
-}
-
-.playbuttons #pauseButton {
-    margin-left: 10px;
-}
 
 #visual {
     height: 100vh;
@@ -70,10 +48,10 @@
     }
 } */
 .visual-title {
-    margin-top: 10rem;
     font-size: 7vw;
     line-height: 1;
     font-weight: 800;
+    margin-top: 15rem;
     text-align: center;
     text-transform: uppercase;
     font-weight: 800;
@@ -82,6 +60,7 @@
     color: var(--lightpink-color);
     text-shadow: 5px 5px 0px #e4b7a9, 10px 10px 0px #ab8475, 15px 15px 0px #795548;
     transform: translateY(-10px);
+    z-index: -111;
 }
 
 .visual-title em {

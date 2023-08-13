@@ -1,1 +1,202 @@
-#port2{}
+#port {
+    background: var(--black);
+}
+
+.port-inner {
+    padding: 16px;
+}
+
+.port-title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 35%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--white);
+    border-bottom: 0.4vw solid var(--white);
+    margin-bottom: 100px;
+}
+
+.port-item {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    background-color: var(--white)
+}
+
+.port-item.s1 {
+    top: 180px;
+}
+
+.s1::after {
+    content: '1';
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background-color: var(--darkpink-color);
+    top: -80px;
+    right: 30px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.port-item.s2 {
+    top: 200px;
+}
+
+.s2::after {
+    content: '2';
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background-color: var(--darkgreen-color);
+    top: -80px;
+    right: 130px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.port-item.s3 {
+    top: 220px;
+}
+
+.s3::after {
+    content: '3';
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background-color: var(--lightpink-color);
+    top: -80px;
+    right: 230px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.port-item.s4 {
+    top: 240px;
+}
+
+.s4::after {
+    content: '4';
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background-color: var(--darkblue-color);
+    top: -80px;
+    right: 330px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.port-pic {
+    display: flex;
+    gap: 20px;
+    flex: 2;
+    padding: 0 50px;
+}
+
+.port-pic img {
+    object-fit: cover;
+}
+
+.port-txt {
+    flex: 3;
+    position: relative;
+    font-size: 1.2rem;
+    z-index: -99;
+}
+
+.port-txt h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.port-txt p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.port-txt span {
+    display: block;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.port-btn {
+    position: absolute;
+    right: 3%;
+    top: 70%;
+}
+
+.port-btn a {
+    display: inline-block;
+    color: var(--darkpink-color);
+    border: 1px solid var(--darkpink-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+    margin-right: 20px;
+}
+
+.port-btn a:hover {
+    background-color: var(--darkpink-color);
+    color: var(--white);
+}
+
+.parrot {
+    position: absolute;
+    right: -21px;
+    top: -14px;
+    width: 60px;
+    text-align: center;
+    animation: blink 2s infinite;
+    transform: rotate(15deg);
+    color: var(--lightpink-color);
+    font-size: 12px;
+}
+
+
+.parrot:before {
+    content: "Click Me!";
+}
+
+@keyframes blink {
+
+    25%,
+    75% {
+        color: transparent;
+    }
+
+    40%,
+    60% {
+        color: var(--darkpink-color);
+    }
+}
