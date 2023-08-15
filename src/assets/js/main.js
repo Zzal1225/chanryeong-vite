@@ -76,7 +76,7 @@ targets.forEach((target) => {
     },
     scrollTrigger: {
       trigger: target,
-      start: "top bottom",
+      start: "top center",
       end: "+=400",
       markers: false,
     },
@@ -132,7 +132,7 @@ btnPrimaryBtnCart.addEventListener("click", function () {
   
   setTimeout(function () {
     cartConfirm.style.display = "none";
-  }, 2500);
+  }, 1500);
 });
 
 const closeButtons = document.querySelectorAll(".close-buttons");

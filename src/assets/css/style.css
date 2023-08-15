@@ -133,6 +133,9 @@
     gap: 30px;
   }
   
+  .flip-card span{
+    font-weight: 900;
+  }
 .flip-card .close-buttons {
     width: 50%;
     border-radius: 10px;

@@ -25,8 +25,8 @@
             </div>
             <div class="flip-card-back">
                 <p><em>본 사이트는 Desktop에 최적화되어 있습니다.</em>
-                    좌측 상단의 재생버튼을 누르시면 BGM을 들을 수 있어요.<br>
-                    사이트를 보기 전에 아래의 닫기 버튼을 눌러서 해당 팝업을 닫아주세요!
+                    BGM 재생을 원치 않으시면 좌측 상단의 일시정지버튼을 눌러주세요.<br>
+                    감상 전 아래의 <span>닫기 버튼</span>을 눌러서 반드시 <span>해당 팝업을 닫아주세요!</span>
                     <i class="fa-regular fa-face-smile-beam"></i><br>
                     문의 : pakcam35@naver.com
                 </p>
@@ -37,7 +37,7 @@
     </div>
     <div id="scrollHeight">
     </div>
-    <audio id="bgm" loop>
+    <audio id="bgm" loop autoplay>
         <source src="assets/img/AJR-BANG.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -138,9 +138,10 @@
                         <div class="intro-txt">
                             <h2 class="split">Coding is awesome !</h2>
                             <p data-500="opacity: 0;" data-700="opacity: 1;">안녕하세요 신입 웹 퍼블리셔 <em>박찬령</em>입니다.<br>
-                                저는 학원에서 5개월 간 <em>웹 퍼블리셔 과정</em>을 학습하며 포토샵, 일러스트, 피그마 등 다양한 툴을 익혔습니다. <br>
+                                저는 <em>2023.3.9 ~ 8.14</em>까지 5개월 간 부산IT교육센터에서 <em>웹 퍼블리셔 과정</em>을 학습하며 포토샵, 일러스트, 피그마 등
+                                다양한 툴을 익혔습니다.
                                 많은 과목 중 단연 저의 마음을 사로잡은 과목은 <em>코딩</em>이었습니다.
-                                제 머리 속 아이디어를 코드 몇 줄로 구현해낼 수 있다는 점이 매력적이었기 때문입니다.<br>
+                                제 머리 속 아이디어를 코드 몇 줄로 구현해낼 수 있다는 점이 매력적이었기 때문입니다.
                                 웹 분야는 끊임없이 신기술이 출시되고, 그 신기술을 소개하는 강의 또한 빠른 속도로 업데이트되는데 그런 점도 새로운 것을 배우기를 좋아하는 저에게 큰 장점으로
                                 다가왔습니다.<br><br>
                             </p>
@@ -258,7 +259,7 @@
                                 슬라이더를 순수 자바스크립트로 구현하고 Image Sprite를 사용했습니다.</p>
                             <p><span>주요 구현 기능:</span> 필터, 슬라이더, 탑 버튼</p>
                             <div class="skill">
-                                <span>Use:</span> HTML, SCSS, javascript, swiper
+                                <span>Use:</span> HTML, CSS, javascript, swiper
                             </div>
                             <p><span>작업기간:</span> 3일</p>
                         </div>
@@ -278,7 +279,7 @@
                             <p class="port-txt-desc">테마파크 '레고랜드'의 웹 사이트를 리뉴얼한 작업물입니다.<br>처음으로 만든 작업물이라 미흡하지만 첫 작업물인만큼
                                 애정이 많이 가서 고민 끝에 링크합니다.<br>부족하지만 이쁘게 봐주세요. <i class="fa-regular fa-face-tired"></i></p>
                             <div class="skill">
-                                <span>Use:</span> HTML, SCSS, javascript, jQuery, fullpage.js
+                                <span>Use:</span> HTML, CSS, javascript, jQuery, fullpage.js
                             </div>
                             <p><span>작업기간:</span> 14일</p>
                         </div>
@@ -431,7 +432,7 @@
                     <div class="contatc-item">
                         <a href="mailto:pakcam35@naver.com" target="_blank" rel="noreferrer"><em>E-mail :</em>
                             pakcam35@naver.com</a>
-                        <p><em>Phone : </em> 010 - 7540 - 9538</p>
+
                         <span>© 2023 Chanryeong Park's Portfolio<br />
                             이 사이트는 비트를 이용하여 제작하였습니다.</span>
                         <div class="carry" data-10300="left: -110%;" data-11000="left: 30%;"><img
@@ -440,7 +441,9 @@
                 </div>
                 <div class="right">
                     <img src="assets/img/myflamingo.jpg" alt="내가 찍은 플라밍고 사진">
-                    <button class="like"><i class="fa-solid fa-heart fa-beat"></i></button>
+                    <button class="like"><i class="fa-solid fa-heart fa-beat"></i>
+                        <div class="parrot"></div>
+                    </button>
                     <div class="chat"><span>
                             칸쿤에서 제가 직접 찍은 플라밍고에요! <i class="fa-regular fa-face-smile"></i>
                         </span></div>

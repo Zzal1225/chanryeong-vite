@@ -51,7 +51,7 @@
 .carry {
     position: absolute;
     width: 200px;
-    top: 0;
+    top: 6%;
     left: 0%;
     z-index: 99999;
     animation: animateimgWave 1s linear infinite;
@@ -59,7 +59,7 @@
 
 .like {
     position: absolute;
-    bottom: -50px;
+    bottom: -70px;
     right: 10px;
     font-size: 30px;
     cursor: pointer;
@@ -75,9 +75,9 @@
     padding: 10px;
     text-align: center;
     position: absolute;
-    right: 7%;
+    right: 8%;
     width: 44%;
-    top: 102%;
+    top: 105%;
     display: none;
 }
 
