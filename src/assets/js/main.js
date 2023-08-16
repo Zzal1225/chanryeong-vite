@@ -124,6 +124,7 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 
 
+// 푸터 하트아이콘 클릭 시 할 일
 const btnPrimaryBtnCart = document.querySelector(".like");
 const cartConfirm = document.querySelector(".chat");
 
@@ -135,6 +136,7 @@ btnPrimaryBtnCart.addEventListener("click", function () {
   }, 1500);
 });
 
+// 팝업카드
 const closeButtons = document.querySelectorAll(".close-buttons");
 const frontEventBanner = document.querySelector(".flip-card");
 
