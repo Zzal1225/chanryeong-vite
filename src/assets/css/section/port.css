@@ -109,6 +109,24 @@
     border-radius: 10px 10px 0 0;
 }
 
+.port-item.s5 {
+    top: 260px;
+}
+
+.s5::after {
+    content: '5';
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background-color: var(--lightgreen-color);
+    top: -80px;
+    right: 430px;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
 .port-pic {
     display: flex;
     gap: 20px;
