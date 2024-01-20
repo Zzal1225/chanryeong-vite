@@ -1,440 +1,646 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="구직용 포트폴리오 사이트입니다." />
     <meta name="keyword" content="포트폴리오, portfolio, 웹퍼블리셔" />
     <title>Chanryeong's Portfolio</title>
 
     <link rel="icon" type="image/svg+xml" href="assets/img/flamingo-01.svg" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="assets/img/titleflamingo.svg" alt="플라밍고 이미지">
-                <p class="title">WELCOME TO<br>MY WEBSITE</p>
-            </div>
-            <div class="flip-card-back">
-                <p><em>본 사이트는 Desktop에 최적화되어 있습니다.</em>
-                    좌측 상단의 <span>재생버튼</span>을 누르면 BGM과 함께 감상할 수 있습니다.<br>
-                    감상 전 아래의 <span>닫기 버튼</span>을 눌러서 반드시 <span>해당 팝업을 닫아주세요!</span>
-                    <i class="fa-regular fa-face-smile-beam"></i><br>
-                    문의 : pakcam35@naver.com
-                </p>
-                <a href="https://github.com/Zzal1225/chanryeong-vite" target="_blank" class="code-buttons">코드보기</a>
-                <a href="#none" class="close-buttons">닫기</a>
-            </div>
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/img/titleflamingo.svg" alt="플라밍고 이미지" />
+          <p class="title">WELCOME TO<br />MY WEBSITE</p>
         </div>
+        <div class="flip-card-back">
+          <p>
+            <em>본 사이트는 Desktop에 최적화되어 있습니다.</em> 좌측 상단의
+            <span>재생버튼</span>을 누르면 BGM과 함께 감상할 수 있습니다.<br />
+            감상 전 아래의 <span>닫기 버튼</span>을 눌러서 반드시
+            <span>해당 팝업을 닫아주세요!</span>
+            <i class="fa-regular fa-face-smile-beam"></i><br />
+            문의 : pakcam35@naver.com
+          </p>
+          <a
+            href="https://github.com/Zzal1225/chanryeong-vite"
+            target="_blank"
+            class="code-buttons"
+            >코드보기</a
+          >
+          <a href="#none" class="close-buttons">닫기</a>
+        </div>
+      </div>
     </div>
-    <div id="scrollHeight">
-    </div>
+    <div id="scrollHeight"></div>
     <audio id="bgm" loop>
-        <source src="assets/img/AJR-BANG.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+      <source src="assets/img/AJR-BANG.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
     </audio>
     <div class="playbuttons" data-0="opacity:1;" data-3800="opacity: 0;">
-        <button id="playButton"><i class="fa-solid fa-play"></i></button>
-        <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
+      <button id="playButton"><i class="fa-solid fa-play"></i></button>
+      <button id="pauseButton"><i class="fa-solid fa-pause"></i></button>
     </div>
 
     <div id="skip">
-        <a href="#header">헤더 영역 바로가기</a>
-        <a href="#visual">홈 영역 바로가기</a>
-        <a href="#intro">소개 영역 바로가기</a>
-        <a href="#port">포트폴리오 영역 바로가기</a>
-        <a href="#port-js">자바스크립트 영역 바로가기</a>
-        <a href="#footer">연락처 & 푸터 영역 바로가기</a>
+      <a href="#header">헤더 영역 바로가기</a>
+      <a href="#visual">홈 영역 바로가기</a>
+      <a href="#intro">소개 영역 바로가기</a>
+      <a href="#port">포트폴리오 영역 바로가기</a>
+      <a href="#port-js">자바스크립트 영역 바로가기</a>
+      <a href="#footer">연락처 & 푸터 영역 바로가기</a>
     </div>
     <!-- //skip -->
 
     <header id="header" role="banner">
-        <div class="header-inner" data-0="color: black;" data-1800="color: white;" data-5250="color: black;">
-            <div class="header-logo">
-                <h1><a href="#visual">Portfolio<em>made with vite</em></a></h1>
-            </div>
-            <nav class="header-nav">
-                <ul>
-                    <li><a href="#visual">Home</a></li>
-                    <li><a href="#intro">About Me</a></li>
-                    <li><a href="#port">Portfolio</a></li>
-                    <li><a href="#port-js">Javascript</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </nav>
+      <div
+        class="header-inner"
+        data-0="color: black;"
+        data-1800="color: white;"
+        data-5250="color: black;"
+      >
+        <div class="header-logo">
+          <h1>
+            <a href="#visual">Portfolio<em>made with vite</em></a>
+          </h1>
         </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#visual">Home</a></li>
+            <li><a href="#intro">About Me</a></li>
+            <li><a href="#port">Portfolio</a></li>
+            <li><a href="#port-js">Javascript</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- //header -->
 
     <main id="main" role="main">
-
-        <section id="visual">
-            <div class="visual-inner">
-                <div class="visual-title" data-0="transform:scale(1)" data-200="transform:scale(1.3)">
-                    <em>R</em>yeong's<br>
-                    <span><em style="color: var(--darkgreen-color)">P</em>ortfolio</span>
-                </div>
-                <div class="visual-wrap" aria-hidden="true">
-                    <div class="img" id="img1">
-                        <img src="assets/img/flamingo-01.svg" alt="플라밍고" />
-                    </div>
-                    <div class="img" id="img2">
-                        <img src="assets/img/flamingo-02.png" alt="플라밍고" />
-                    </div>
-                    <div class="img" id="img3">
-                        <img src="assets/img/watermelon.png" alt="수박" />
-                    </div>
-                    <div class="img" id="img4">
-                        <img src="assets/img/left_tree.svg" alt="왼쪽나무" />
-                    </div>
-                    <div class="img" id="img5">
-                        <img src="assets/img/right_tree.svg" alt="오른쪽나무" />
-                    </div>
-                    <div class="waves">
-                        <div class="wave" id="wave1"></div>
-                        <div class="wave" id="wave2"></div>
-                        <div class="wave" id="wave3"></div>
-                        <div class="wave" id="wave4"></div>
-                    </div>
-                </div>
+      <section id="visual">
+        <div class="visual-inner">
+          <div
+            class="visual-title"
+            data-0="transform:scale(1)"
+            data-200="transform:scale(1.3)"
+          >
+            <em>R</em>yeong's<br />
+            <span
+              ><em style="color: var(--darkgreen-color)">P</em>ortfolio</span
+            >
+          </div>
+          <div class="visual-wrap" aria-hidden="true">
+            <div class="img" id="img1">
+              <img src="assets/img/flamingo-01.svg" alt="플라밍고" />
             </div>
-        </section>
-        <!-- skill end -->
-
-        <section id="intro" data-1500="background-color:rgb(53,134,255);" data-2600="background-color:rgb(0, 0, 0);">
-            <img src="assets/img/neon1.svg" alt="네온 플라밍고 이미지" id="neon"
-                data-2700="transform: translateY(0%); opacity: 0;" data-2900="transform: translateY(25%); opacity: 1; "
-                data-3200="transform: translateY(0%); opacity: 0; ">
-            <img src="assets/img/neon-watermelon.svg" alt="네온 플라밍고 이미지" id="neon2"
-                data-2500="transform: translateX(0%) rotate(0deg); opacity: 0;"
-                data-2700="transform: translateX(15%) rotate(-30deg); opacity: 1; "
-                data-2900="transform: translateX(15%) rotate(-30deg); opacity: 0; ">
-
-            <div class="intro-inner">
-                <img src="assets/img/about-fla01.png" alt="플라밍고 이미지" class="parallax-item-desc" id="about-fla01">
-                <img src="assets/img/about-fla03.png" alt="플라밍고 이미지" class="parallax-item-desc" id="about-fla03">
-                <img src="assets/img/about-fla04.png" alt="플라밍고 이미지" class="parallax-item-desc" id="about-fla04">
-                <img src="assets/img/about-fla06.png" alt="플라밍고 이미지" class="parallax-item-desc" id="about-fla06">
-                <h2 class="intro-title">About Me</h2>
-                <div class="intro-desc">
-                    <div class="intro-item">
-                        <div class="intro-pic">
-                            <img src="assets/img/me01.jpg" alt="내사진">
-                            <div class="intro-frame"></div>
-                        </div>
-                        <div class="intro-txt">
-                            <h2 class="split">Coding is awesome !</h2>
-                            <p data-500="opacity: 0;" data-700="opacity: 1;">안녕하세요 신입 웹 퍼블리셔 <em>박찬령</em>입니다.<br>
-                                저는 <em>2023.3.9 ~ 8.14</em>까지 5개월 간 부산IT교육센터에서 <em>웹 퍼블리셔 과정</em>을 학습하며 포토샵, 일러스트, 피그마 등
-                                다양한 툴을 익혔습니다.
-                                많은 과목 중 단연 저의 마음을 사로잡은 과목은 <em>코딩</em>이었습니다.
-                                제 머리 속 아이디어를 코드 몇 줄로 구현해낼 수 있다는 점이 매력적이었기 때문입니다.
-                                웹 분야는 끊임없이 신기술이 출시되고, 그 신기술을 소개하는 강의 또한 빠른 속도로 업데이트되는데 그런 점도 새로운 것을 배우기를 좋아하는 저에게 큰 장점으로
-                                다가왔습니다.<br><br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="intro-item">
-                        <div class="intro-pic">
-                            <img src="assets/img/me00.jpg" alt="내사진">
-                            <div class="intro-frame"></div>
-                        </div>
-                        <div class="intro-txt">
-                            <h2 class="split">놀 땐 열심히, 일할 땐 더 열심히 !</h2>
-                            <p data-1100="opacity: 0;" data-1400="opacity: 1;">
-                                학원 과정 기간인 <em>5개월</em>이라는 시간이 누군가에겐 짧은 시간일 수도 있겠지만 저는 이 시간을 낭비하고 싶지 않았습니다.
-                                그래서 스스로 <em>외출은 한 달에 한 번</em>이라는 제한을 걸고 나머지 시간은 집에 틀어 박혀 인터넷 강의를 듣고 포트폴리오 작업을 하며 보냈습니다.
-                                대신 한 번 외출하면 내일이 없는 사람처럼 신나게 놀았기 때문에 작업물에 더 열심히 <em>집중</em>할 수 있었습니다.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="intro-item">
-                        <div class="intro-pic">
-                            <img src="assets/img/me03.jpg" alt="내사진">
-                            <div class="intro-frame"></div>
-                        </div>
-                        <div class="intro-txt">
-                            <h2 class="split">소통이 원활한 사람</h2>
-                            <p data-1800="opacity: 0;" data-2100="opacity: 1;">
-                                저는 <em>대인관계</em>에서 유머 감각이 있고 시원시원하다는 평가를 받으며, 사람들과의 대화에 능숙합니다.<br> 어릴 때부터 사람을 대하는 것에
-                                어려움이 없는
-                                성격이었고, 오랜 기간 서비스직과 영업직에서 일한 덕분이기도 합니다.<br><br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="intro-item">
-                        <div class="intro-pic">
-                            <img src="assets/img/me05.png" alt="런데이인증사진">
-                            <div class="intro-frame"></div>
-                        </div>
-                        <div class="intro-txt">
-                            <h2 class="split">체력은 국력 !</h2>
-                            <p data-2500="opacity: 0;" data-2800="opacity: 1;">저는 자기관리를 위해 스스로에게 미션을 주고 그것을 달성하는 것에 큰
-                                <em>성취감</em>을 느낍니다.
-                                가장 최근의 미션은 런데이 어플을 활용한 <em>런닝</em>이었는데, 단기 목표는 초급자 코스를 완주하는 것이고 장기 목표는 체력을 기르는 것이었습니다.
-                                <em>단기목표</em>는 8주만에 달성했고, 최근 장시간 쉬지 않고 작업을 하는 경우가 잦아도 컨디션이 좋기 때문에 <em>장기목표</em> 또한 달성했다고
-                                느낍니다.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="img" id="img2">
+              <img src="assets/img/flamingo-02.png" alt="플라밍고" />
             </div>
-        </section>
-        <!-- intro end -->
-
-
-        <section id="port" data-4000="background-color: rgb(0,0,0);" data-5500="background-color:rgb(255, 236, 212);">
-            <div class="port-inner">
-                <h2 class="port-title">Portfolio</h2>
-                <div class="port-wrap">
-                    <article class="port-item s1">
-                        <div class="port-pic">
-                            <div class="tablet"><img src="assets/img/acro-tablet.gif" alt="리액트작업물 타블렛버젼"></div>
-                            <div class="mobile"><img src="assets/img/acro_mobile.gif" alt="리액트작업물 모바일버젼"></div>
-                        </div>
-                        <div class="port-txt" data-3300="transform: translateY(110%); opacity:0;"
-                            data-3600="transform: translateY(0); opacity:1;">
-                            <h2>[React + 반응형 웹] - ACRO</h2>
-                            <p class="port-txt-desc">React를 이용하여 만든 반응형 웹 사이트 입니다.<br>메인페이지만 작업하였습니다.</p>
-                            <div class="skill">
-                                <span>Use:</span> HTML, SCSS, javascript, React, React-slick, Git
-                            </div>
-                            <p><span>작업기간:</span> 4일</p>
-                        </div>
-                        <div class="port-btn">
-                            <a href="https://ryeong-react.netlify.app/" target="_blank">SITE
-                                <div class="parrot"></div>
-                            </a>
-                            <a href="https://github.com/Zzal1225/port2023-react" target="_blank">Code<div
-                                    class="parrot"></div></a>
-                        </div>
-                    </article>
-                    <article class="port-item s2">
-                        <div class="port-pic">
-                            <div class="tablet"><img src="assets/img/wiggle-tablet.gif" alt="위글위글 태블릿 모드 목업"></div>
-                            <div class="mobile"><img src="assets/img/wiggle-mobile.gif" alt="위글위글 모바일 모드 목업"></div>
-                        </div>
-                        <div class="port-txt" data-3800="transform: translateY(110%); opacity:0;"
-                            data-4300="transform: translateY(0); opacity:1;">
-                            <h2>[반응형 웹] - wiggle wiggle</h2>
-                            <p class="port-txt-desc">브랜드 '위글위글'의 웹 사이트를 리뉴얼한 작업물입니다.<br>장바구니, 상품상세페이지 포함 메인 페이지 1개,
-                                서브페이지 4개를 작업하였습니다.<br>header와 footer는 HTML파일을 include하는 방식으로 구현하였습니다.</p>
-                            <p><span>주요 구현 기능:</span> 장바구니 삭제와 전체삭제, 로그인과 공유하기 모달, 모두접기 모두펼치기 기능, 로그인 시 유저 상태창 변경</p>
-                            <div class="skill">
-                                <span>Use:</span> HTML, SCSS, javascript, jQuery, Slick, Figma
-                            </div>
-                            <p><span>작업기간:</span> 9일</p>
-                        </div>
-                        <div class="port-btn">
-                            <a href="https://ryeong-wigglewiggle.netlify.app/" target="_blank">SITE
-                                <div class="parrot"></div>
-                            </a>
-                            <a href="https://www.figma.com/file/SkbkTuIni1Yl53efoxjDdc/%EC%8A%A4%ED%83%80%EC%9D%BC-%EA%B0%80%EC%9D%B4%EB%93%9C(Style-Guide)?type=design&node-id=0%3A1&mode=design&t=rOWKoSs2kBCNCrei-1"
-                                target="_blank">Design<div class="parrot"></div></a>
-                        </div>
-                    </article>
-                    <article class="port-item s3">
-                        <div class="port-pic">
-                            <div class="tablet"><img src="assets/img/hagen-tablet.gif" alt="하겐다즈 태블릿 모드 목업"></div>
-                            <div class="mobile"><img src="assets/img/hagen-mobile.gif" alt="하겐다즈 모바일 모드 목업"></div>
-                        </div>
-                        <div class="port-txt" data-4600="transform: translateY(110%); opacity:0;"
-                            data-5100="transform: translateY(0); opacity:1;">
-                            <h2>[반응형 웹] - Haagendazs</h2>
-                            <p class="port-txt-desc">브랜드 '하겐다즈'의 웹 사이트를 리뉴얼한 작업물입니다.<br>로그인페이지(우측 아이콘 클릭시 이동) 포함 모든 서브
-                                페이지를 구현하였습니다.</p>
-                            <p><span>주요 구현 기능:</span> 제품 검색, 이미지 크기 확대 축소 기능, 아코디언, 필터, 팝업창 24시간동안 열지 않기 기능</p>
-                            <div class="skill">
-                                <span>Use:</span> HTML, SCSS, javascript, jQuery, animate, owl-carousel, gsap, Figma
-                            </div>
-                            <p><span>작업기간:</span> 13일</p>
-                        </div>
-                        <div class="port-btn">
-                            <a href="https://ryeong-haagendazs.netlify.app/" target="_blank">SITE
-                                <div class="parrot"></div>
-                            </a>
-                            <a href="https://www.figma.com/proto/r6fHHRnNvR1up33X3sRinD/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?page-id=42%3A5&node-id=42-6&mode=design&t=METQoFdPkMNWtRfi-1"
-                                target="_blank">Concept Page<div class="parrot"></div></a>
-                        </div>
-                    </article>
-                    <article class="port-item s4">
-                        <div class="port-pic">
-                            <div class="tablet"><img src="assets/img/national.png" alt="내셔널지오그래픽 목업"></div>
-                        </div>
-                        <div class="port-txt" data-5300="transform: translateY(110%); opacity:0;"
-                            data-5800="transform: translateY(0); opacity:1;">
-                            <h2>[웹 사이트 리뉴얼] - National Geographic</h2>
-                            <p class="port-txt-desc">브랜드 '내셔널 지오그래픽'의 웹 사이트를 리뉴얼한 작업물입니다.<br>메인 페이지만을 구현하였습니다.<br>메인
-                                슬라이더를 순수 자바스크립트로 구현하고 Image Sprite를 사용했습니다.</p>
-                            <p><span>주요 구현 기능:</span> 필터, 슬라이더, 탑 버튼</p>
-                            <div class="skill">
-                                <span>Use:</span> HTML, CSS, javascript, swiper
-                            </div>
-                            <p><span>작업기간:</span> 3일</p>
-                        </div>
-                        <div class="port-btn">
-                            <a href="https://ryeong-ng.netlify.app/" target="_blank">SITE
-                                <div class="parrot"></div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="port-item s5">
-                        <div class="port-pic">
-                            <div class="tablet"><img src="assets/img/legoland.png" alt="레고랜드 목업"></div>
-                        </div>
-                        <div class="port-txt" data-6200="transform: translateY(110%); opacity:0;"
-                            data-6600="transform: translateY(0); opacity:1;">
-                            <h2>[웹 사이트 리뉴얼] - LEGO LAND</h2>
-                            <p class="port-txt-desc">테마파크 '레고랜드'의 웹 사이트를 리뉴얼한 작업물입니다.<br>처음으로 만든 작업물이라 미흡하지만 첫 작업물인만큼
-                                애정이 많이 가서 고민 끝에 링크합니다.<br>부족하지만 이쁘게 봐주세요. <i class="fa-regular fa-face-tired"></i></p>
-                            <div class="skill">
-                                <span>Use:</span> HTML, CSS, javascript, jQuery, fullpage.js
-                            </div>
-                            <p><span>작업기간:</span> 14일</p>
-                        </div>
-                        <div class="port-btn">
-                            <a href="https://ryeong-legoland.netlify.app/" target="_blank">SITE
-                                <div class="parrot"></div>
-                            </a>
-                            <a href="https://drive.google.com/file/d/1uPxZisKUxeUeD5xyqmfr8QsdQdqAIpuW/view?usp=drive_link"
-                                target="_blank">기획서<div class="parrot"></div></a>
-                        </div>
-                    </article>
-                </div>
+            <div class="img" id="img3">
+              <img src="assets/img/watermelon.png" alt="수박" />
             </div>
-        </section>
-        <!-- port end -->
-
-        <section id="port-js">
-            <div class="port-js-inner">
-                <div class="port-js-title">
-                    javascript <em>계속 업데이트할 예정입니다.</em>
-                </div>
-                <div class="port-js-wrap" data-10500="opacity: 1;" data-11500="opacity:0;">
-                    <article class="port-js-item">
-                        <div class="img">
-                            <img src="assets/img/port-js01.gif" />
-                        </div>
-                        <h3 class="title">MouseEffect</h3>
-                        <p class="desc">
-                            순수 자바스크립트를 이용한 MouseEffect입니다.
-                        </p>
-                        <div class="js-btns">
-                            <a href="https://github.com/Zzal1225/port-js" target="_blank" class="js-btn">CODE
-                                <div class="parrot"></div>
-                            </a>
-                            <a href="https://ryeong-portjs.netlify.app/html/mouseeffect01-javascript" target="_blank"
-                                class="js-btn">VIEW<div class="parrot"></div></a>
-                        </div>
-                    </article>
-                    <article class="port-js-item">
-                        <div class="img">
-                            <img src="assets/img/port-js02.gif" />
-                        </div>
-                        <h3 class="title">테이블 페이지네이션</h3>
-                        <p class="desc">
-                            순수 자바스크립트를 이용한 테이블 페이지네이션입니다.<br>
-                            광복절을 맞아 국보 1호~50호를 주제로 테이블을 작성했어요 !
-                        </p>
-                        <div class="js-btns">
-                            <a href="https://github.com/Zzal1225/port-js" target="_blank" class="js-btn">CODE
-                                <div class="parrot"></div>
-                            </a>
-                            <a href="https://ryeong-portjs.netlify.app/html/pagination" target="_blank"
-                                class="js-btn">VIEW<div class="parrot"></div></a>
-                        </div>
-                    </article>
-                    <article class="port-js-item">
-                        <div class="img">
-                            <img src="assets/img/slide.gif" />
-                        </div>
-                        <h3 class="title">반응형 슬라이드</h3>
-                        <p class="desc">
-                            순수 자바스크립트로 구현한 반응형 슬라이드입니다.<br>
-                            구현기능 : 무한 반복, 자동재생, 마우스 호버 시 재생멈춤
-                        </p>
-                        <div class="js-btns">
-                            <a href="https://github.com/Zzal1225/port-js" target="_blank" class="js-btn">CODE
-                                <div class="parrot"></div>
-                            </a>
-                            <a href="https://ryeong-portjs.netlify.app/html/slide" target="_blank" class="js-btn">VIEW
-                                <div class="parrot"></div>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="port-js-item">
-                        <div class="img">
-                        </div>
-                        <h3 class="title">업데이트 예정</h3>
-                        <p class="desc">
-                            업데이트 예정입니다.<br>
-                        </p>
-                    </article>
-                    <article class="port-js-item">
-                        <div class="img">
-                        </div>
-                        <h3 class="title">업데이트 예정</h3>
-                        <p class="desc">
-                            업데이트 예정입니다.<br>
-                        </p>
-                    </article>
-                    <article class="port-js-item">
-                        <div class="img">
-                        </div>
-                        <h3 class="title">업데이트 예정</h3>
-                        <p class="desc">
-                            업데이트 예정입니다.<br>
-                        </p>
-                    </article>
-                </div>
+            <div class="img" id="img4">
+              <img src="assets/img/left_tree.svg" alt="왼쪽나무" />
             </div>
-        </section>
-        <!-- port-js end -->
+            <div class="img" id="img5">
+              <img src="assets/img/right_tree.svg" alt="오른쪽나무" />
+            </div>
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skill end -->
+
+      <section
+        id="intro"
+        data-1500="background-color:rgb(53,134,255);"
+        data-2600="background-color:rgb(0, 0, 0);"
+      >
+        <img
+          src="assets/img/neon1.svg"
+          alt="네온 플라밍고 이미지"
+          id="neon"
+          data-2700="transform: translateY(0%); opacity: 0;"
+          data-2900="transform: translateY(25%); opacity: 1; "
+          data-3200="transform: translateY(0%); opacity: 0; "
+        />
+        <img
+          src="assets/img/neon-watermelon.svg"
+          alt="네온 플라밍고 이미지"
+          id="neon2"
+          data-2500="transform: translateX(0%) rotate(0deg); opacity: 0;"
+          data-2700="transform: translateX(15%) rotate(-30deg); opacity: 1; "
+          data-2900="transform: translateX(15%) rotate(-30deg); opacity: 0; "
+        />
+
+        <div class="intro-inner">
+          <img
+            src="assets/img/about-fla01.png"
+            alt="플라밍고 이미지"
+            class="parallax-item-desc"
+            id="about-fla01"
+          />
+          <img
+            src="assets/img/about-fla03.png"
+            alt="플라밍고 이미지"
+            class="parallax-item-desc"
+            id="about-fla03"
+          />
+          <img
+            src="assets/img/about-fla04.png"
+            alt="플라밍고 이미지"
+            class="parallax-item-desc"
+            id="about-fla04"
+          />
+          <img
+            src="assets/img/about-fla06.png"
+            alt="플라밍고 이미지"
+            class="parallax-item-desc"
+            id="about-fla06"
+          />
+          <h2 class="intro-title">About Me</h2>
+          <div class="intro-desc">
+            <div class="intro-item">
+              <div class="intro-pic">
+                <img src="assets/img/me01.jpg" alt="내사진" />
+                <div class="intro-frame"></div>
+              </div>
+              <div class="intro-txt">
+                <h2 class="split">Coding is awesome !</h2>
+                <p data-500="opacity: 0;" data-700="opacity: 1;">
+                  안녕하세요 신입 웹 퍼블리셔 <em>박찬령</em>입니다.<br />
+                  저는 <em>2023.3.9 ~ 8.14</em>까지 5개월 간 부산IT교육센터에서
+                  <em>웹 퍼블리셔 과정</em>을 학습하며 포토샵, 일러스트, 피그마,
+                  프리미어프로, 애프터이펙트 등 다양한 툴을 익혔습니다. 많은
+                  과목 중 단연 저의 마음을 사로잡은 과목은
+                  <em>코딩</em>이었습니다. 제 머리 속 아이디어를 코드 몇 줄로
+                  구현해낼 수 있다는 점이 매력적이었기 때문입니다. 웹 분야는
+                  끊임없이 신기술이 출시되고, 그 신기술을 소개하는 강의 또한
+                  빠른 속도로 업데이트되는데 그런 점도 새로운 것을 배우기를
+                  좋아하는 저에게 큰 장점으로 다가왔습니다.<br /><br />
+                </p>
+              </div>
+            </div>
+            <div class="intro-item">
+              <div class="intro-pic">
+                <img src="assets/img/me00.jpg" alt="내사진" />
+                <div class="intro-frame"></div>
+              </div>
+              <div class="intro-txt">
+                <h2 class="split">놀 땐 열심히, 일할 땐 더 열심히 !</h2>
+                <p data-1100="opacity: 0;" data-1400="opacity: 1;">
+                  학원 과정 기간인 <em>5개월</em>이라는 시간이 누군가에겐 짧은
+                  시간일 수도 있겠지만 저는 이 시간을 낭비하고 싶지 않았습니다.
+                  그래서 스스로 <em>외출은 한 달에 한 번</em>이라는 제한을 걸고
+                  나머지 시간은 집에 틀어 박혀 인터넷 강의를 듣고 포트폴리오
+                  작업을 하며 보냈습니다. 대신 한 번 외출하면 내일이 없는
+                  사람처럼 신나게 놀았기 때문에 작업물에 더 열심히
+                  <em>집중</em>할 수 있었습니다.
+                </p>
+              </div>
+            </div>
+            <div class="intro-item">
+              <div class="intro-pic">
+                <img src="assets/img/me03.jpg" alt="내사진" />
+                <div class="intro-frame"></div>
+              </div>
+              <div class="intro-txt">
+                <h2 class="split">소통이 원활한 사람</h2>
+                <p data-1800="opacity: 0;" data-2100="opacity: 1;">
+                  저는 <em>대인관계</em>에서 유머 감각이 있고 시원시원하다는
+                  평가를 받으며, 사람들과의 대화에 능숙합니다.<br />
+                  어릴 때부터 사람을 대하는 것에 어려움이 없는 성격이었고, 오랜
+                  기간 서비스직과 영업직에서 일한 덕분이기도 합니다.<br /><br />
+                </p>
+              </div>
+            </div>
+            <div class="intro-item">
+              <div class="intro-pic">
+                <img src="assets/img/me05.png" alt="런데이인증사진" />
+                <div class="intro-frame"></div>
+              </div>
+              <div class="intro-txt">
+                <h2 class="split">체력은 국력 !</h2>
+                <p data-2500="opacity: 0;" data-2800="opacity: 1;">
+                  저는 자기관리를 위해 스스로에게 미션을 주고 그것을 달성하는
+                  것에 큰 <em>성취감</em>을 느낍니다. 가장 최근의 미션은 런데이
+                  어플을 활용한 <em>런닝</em>이었는데, 단기 목표는 초급자 코스를
+                  완주하는 것이고 장기 목표는 체력을 기르는 것이었습니다.
+                  <em>단기목표</em>는 8주만에 달성했고, 최근 장시간 쉬지 않고
+                  작업을 하는 경우가 잦아도 컨디션이 좋기 때문에
+                  <em>장기목표</em> 또한 달성했다고 느낍니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- intro end -->
+
+      <section
+        id="port"
+        data-4000="background-color: rgb(0,0,0);"
+        data-5500="background-color:rgb(255, 236, 212);"
+      >
+        <div class="port-inner">
+          <h2 class="port-title">Portfolio</h2>
+          <div class="port-wrap">
+            <article class="port-item s1">
+              <div class="port-pic">
+                <div class="tablet">
+                  <img
+                    src="assets/img/acro-tablet.gif"
+                    alt="리액트작업물 타블렛버젼"
+                  />
+                </div>
+                <div class="mobile">
+                  <img
+                    src="assets/img/acro_mobile.gif"
+                    alt="리액트작업물 모바일버젼"
+                  />
+                </div>
+              </div>
+              <div
+                class="port-txt"
+                data-3300="transform: translateY(110%); opacity:0;"
+                data-3600="transform: translateY(0); opacity:1;"
+              >
+                <h2>[React + 반응형 웹] - ACRO</h2>
+                <p class="port-txt-desc">
+                  React를 이용하여 만든 반응형 웹 사이트 입니다.<br />메인페이지만
+                  작업하였습니다.
+                </p>
+                <div class="skill">
+                  <span>Use:</span> HTML, SCSS, javascript, React, React-slick,
+                  Git
+                </div>
+                <p><span>작업기간:</span> 4일</p>
+              </div>
+              <div class="port-btn">
+                <a href="https://ryeong-react.netlify.app/" target="_blank"
+                  >SITE
+                  <div class="parrot"></div>
+                </a>
+                <a
+                  href="https://github.com/Zzal1225/port2023-react"
+                  target="_blank"
+                  >Code
+                  <div class="parrot"></div
+                ></a>
+              </div>
+            </article>
+            <article class="port-item s2">
+              <div class="port-pic">
+                <div class="tablet">
+                  <img
+                    src="assets/img/wiggle-tablet.gif"
+                    alt="위글위글 태블릿 모드 목업"
+                  />
+                </div>
+                <div class="mobile">
+                  <img
+                    src="assets/img/wiggle-mobile.gif"
+                    alt="위글위글 모바일 모드 목업"
+                  />
+                </div>
+              </div>
+              <div
+                class="port-txt"
+                data-3800="transform: translateY(110%); opacity:0;"
+                data-4300="transform: translateY(0); opacity:1;"
+              >
+                <h2>[반응형 웹] - wiggle wiggle</h2>
+                <p class="port-txt-desc">
+                  브랜드 '위글위글'의 웹 사이트를 리뉴얼한 작업물입니다.<br />장바구니,
+                  상품상세페이지 포함 메인 페이지 1개, 서브페이지 4개를
+                  작업하였습니다.<br />header와 footer는 HTML파일을 include하는
+                  방식으로 구현하였습니다.
+                </p>
+                <p>
+                  <span>주요 구현 기능:</span> 장바구니 삭제와 전체삭제,
+                  로그인과 공유하기 모달, 모두접기 모두펼치기 기능, 로그인 시
+                  유저 상태창 변경
+                </p>
+                <div class="skill">
+                  <span>Use:</span> HTML, SCSS, javascript, jQuery, Slick, Figma
+                </div>
+                <p><span>작업기간:</span> 9일</p>
+              </div>
+              <div class="port-btn">
+                <a
+                  href="https://ryeong-wigglewiggle.netlify.app/"
+                  target="_blank"
+                  >SITE
+                  <div class="parrot"></div>
+                </a>
+                <a
+                  href="https://www.figma.com/file/SkbkTuIni1Yl53efoxjDdc/%EC%8A%A4%ED%83%80%EC%9D%BC-%EA%B0%80%EC%9D%B4%EB%93%9C(Style-Guide)?type=design&node-id=0%3A1&mode=design&t=rOWKoSs2kBCNCrei-1"
+                  target="_blank"
+                  >Design
+                  <div class="parrot"></div
+                ></a>
+              </div>
+            </article>
+            <article class="port-item s3">
+              <div class="port-pic">
+                <div class="tablet">
+                  <img
+                    src="assets/img/hagen-tablet.gif"
+                    alt="하겐다즈 태블릿 모드 목업"
+                  />
+                </div>
+                <div class="mobile">
+                  <img
+                    src="assets/img/hagen-mobile.gif"
+                    alt="하겐다즈 모바일 모드 목업"
+                  />
+                </div>
+              </div>
+              <div
+                class="port-txt"
+                data-4600="transform: translateY(110%); opacity:0;"
+                data-5100="transform: translateY(0); opacity:1;"
+              >
+                <h2>[반응형 웹] - Haagendazs</h2>
+                <p class="port-txt-desc">
+                  브랜드 '하겐다즈'의 웹 사이트를 리뉴얼한 작업물입니다.<br />로그인페이지(우측
+                  아이콘 클릭시 이동) 포함 모든 서브 페이지를 구현하였습니다.
+                </p>
+                <p>
+                  <span>주요 구현 기능:</span> 제품 검색, 이미지 크기 확대 축소
+                  기능, 아코디언, 필터, 팝업창 24시간동안 열지 않기 기능
+                </p>
+                <div class="skill">
+                  <span>Use:</span> HTML, SCSS, javascript, jQuery, animate,
+                  owl-carousel, gsap, Figma
+                </div>
+                <p><span>작업기간:</span> 13일</p>
+              </div>
+              <div class="port-btn">
+                <a href="https://ryeong-haagendazs.netlify.app/" target="_blank"
+                  >SITE
+                  <div class="parrot"></div>
+                </a>
+                <a
+                  href="https://www.figma.com/proto/r6fHHRnNvR1up33X3sRinD/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?page-id=42%3A5&node-id=42-6&mode=design&t=METQoFdPkMNWtRfi-1"
+                  target="_blank"
+                  >Concept Page
+                  <div class="parrot"></div
+                ></a>
+              </div>
+            </article>
+            <article class="port-item s4">
+              <div class="port-pic">
+                <div class="tablet">
+                  <img
+                    src="assets/img/national.png"
+                    alt="내셔널지오그래픽 목업"
+                  />
+                </div>
+              </div>
+              <div
+                class="port-txt"
+                data-5300="transform: translateY(110%); opacity:0;"
+                data-5800="transform: translateY(0); opacity:1;"
+              >
+                <h2>[웹 사이트 리뉴얼] - National Geographic</h2>
+                <p class="port-txt-desc">
+                  브랜드 '내셔널 지오그래픽'의 웹 사이트를 리뉴얼한
+                  작업물입니다.<br />메인 페이지만을 구현하였습니다.<br />메인
+                  슬라이더를 순수 자바스크립트로 구현하고 Image Sprite를
+                  사용했습니다.
+                </p>
+                <p><span>주요 구현 기능:</span> 필터, 슬라이더, 탑 버튼</p>
+                <div class="skill">
+                  <span>Use:</span> HTML, CSS, javascript, swiper
+                </div>
+                <p><span>작업기간:</span> 3일</p>
+              </div>
+              <div class="port-btn">
+                <a href="https://ryeong-ng.netlify.app/" target="_blank"
+                  >SITE
+                  <div class="parrot"></div>
+                </a>
+              </div>
+            </article>
+            <article class="port-item s5">
+              <div class="port-pic">
+                <div class="tablet">
+                  <img src="assets/img/legoland.png" alt="레고랜드 목업" />
+                </div>
+              </div>
+              <div
+                class="port-txt"
+                data-6200="transform: translateY(110%); opacity:0;"
+                data-6600="transform: translateY(0); opacity:1;"
+              >
+                <h2>[웹 사이트 리뉴얼] - LEGO LAND</h2>
+                <p class="port-txt-desc">
+                  테마파크 '레고랜드'의 웹 사이트를 리뉴얼한 작업물입니다.<br />처음으로
+                  만든 작업물이라 미흡하지만 첫 작업물인만큼 애정이 많이 가서
+                  고민 끝에 링크합니다.<br />부족하지만 이쁘게 봐주세요.
+                  <i class="fa-regular fa-face-tired"></i>
+                </p>
+                <div class="skill">
+                  <span>Use:</span> HTML, CSS, javascript, jQuery, fullpage.js
+                </div>
+                <p><span>작업기간:</span> 14일</p>
+              </div>
+              <div class="port-btn">
+                <a href="https://ryeong-legoland.netlify.app/" target="_blank"
+                  >SITE
+                  <div class="parrot"></div>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1uPxZisKUxeUeD5xyqmfr8QsdQdqAIpuW/view?usp=drive_link"
+                  target="_blank"
+                  >기획서
+                  <div class="parrot"></div
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- port end -->
+
+      <section id="port-js">
+        <div class="port-js-inner">
+          <div class="port-js-title">
+            javascript <em>계속 업데이트할 예정입니다.</em>
+          </div>
+          <div
+            class="port-js-wrap"
+            data-10500="opacity: 1;"
+            data-11500="opacity:0;"
+          >
+            <article class="port-js-item">
+              <div class="img">
+                <img src="assets/img/port-js01.gif" />
+              </div>
+              <h3 class="title">MouseEffect</h3>
+              <p class="desc">순수 자바스크립트를 이용한 MouseEffect입니다.</p>
+              <div class="js-btns">
+                <a
+                  href="https://github.com/Zzal1225/port-js"
+                  target="_blank"
+                  class="js-btn"
+                  >CODE
+                  <div class="parrot"></div>
+                </a>
+                <a
+                  href="https://ryeong-portjs.netlify.app/html/mouseeffect01-javascript"
+                  target="_blank"
+                  class="js-btn"
+                  >VIEW
+                  <div class="parrot"></div
+                ></a>
+              </div>
+            </article>
+            <article class="port-js-item">
+              <div class="img">
+                <img src="assets/img/port-js02.gif" />
+              </div>
+              <h3 class="title">테이블 페이지네이션</h3>
+              <p class="desc">
+                순수 자바스크립트를 이용한 테이블 페이지네이션입니다.<br />
+                광복절을 맞아 국보 1호~50호를 주제로 테이블을 작성했어요 !
+              </p>
+              <div class="js-btns">
+                <a
+                  href="https://github.com/Zzal1225/port-js"
+                  target="_blank"
+                  class="js-btn"
+                  >CODE
+                  <div class="parrot"></div>
+                </a>
+                <a
+                  href="https://ryeong-portjs.netlify.app/html/pagination"
+                  target="_blank"
+                  class="js-btn"
+                  >VIEW
+                  <div class="parrot"></div
+                ></a>
+              </div>
+            </article>
+            <article class="port-js-item">
+              <div class="img">
+                <img src="assets/img/slide.gif" />
+              </div>
+              <h3 class="title">반응형 슬라이드</h3>
+              <p class="desc">
+                순수 자바스크립트로 구현한 반응형 슬라이드입니다.<br />
+                구현기능 : 무한 반복, 자동재생, 마우스 호버 시 재생멈춤
+              </p>
+              <div class="js-btns">
+                <a
+                  href="https://github.com/Zzal1225/port-js"
+                  target="_blank"
+                  class="js-btn"
+                  >CODE
+                  <div class="parrot"></div>
+                </a>
+                <a
+                  href="https://ryeong-portjs.netlify.app/html/slide"
+                  target="_blank"
+                  class="js-btn"
+                  >VIEW
+                  <div class="parrot"></div>
+                </a>
+              </div>
+            </article>
+            <article class="port-js-item">
+              <div class="img"></div>
+              <h3 class="title">업데이트 예정</h3>
+              <p class="desc">업데이트 예정입니다.<br /></p>
+            </article>
+            <article class="port-js-item">
+              <div class="img"></div>
+              <h3 class="title">업데이트 예정</h3>
+              <p class="desc">업데이트 예정입니다.<br /></p>
+            </article>
+            <article class="port-js-item">
+              <div class="img"></div>
+              <h3 class="title">업데이트 예정</h3>
+              <p class="desc">업데이트 예정입니다.<br /></p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- port-js end -->
     </main>
     <!-- //main -->
 
     <footer id="footer" role="contentinfo">
+      <div class="footer-inner">
+        <div
+          class="footer-info"
+          data-10500="transform:translateX(120%);"
+          data-11500="transform:translateX(0%);"
+        >
+          <div class="left">
+            <h3 class="port-js-title">Contact</h3>
+            <div class="contatc-item">
+              <a
+                href="mailto:pakcam35@naver.com"
+                target="_blank"
+                rel="noreferrer"
+                ><em>E-mail :</em> pakcam35@naver.com</a
+              >
 
-        <div class="footer-inner">
-            <div class="footer-info" data-10500="transform:translateX(120%);" data-11500="transform:translateX(0%);">
-                <div class="left">
-                    <h3 class="port-js-title">Contact</h3>
-                    <div class="contatc-item">
-                        <a href="mailto:pakcam35@naver.com" target="_blank" rel="noreferrer"><em>E-mail :</em>
-                            pakcam35@naver.com</a>
-
-                        <span>© 2023 Chanryeong Park's Portfolio<br />
-                            이 사이트는 비트를 이용하여 제작하였습니다.</span>
-                        <div class="carry" data-10800="left: -110%;" data-11500="left: 30%;"><img
-                                src="assets/img/follow.svg" alt="플라밍고 이미지"></div>
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="assets/img/myflamingo.jpg" alt="내가 찍은 플라밍고 사진">
-                    <button class="like"><i class="fa-solid fa-heart fa-beat"></i>
-                        <div class="parrot"></div>
-                    </button>
-                    <div class="chat"><span>
-                            칸쿤에서 제가 직접 찍은 플라밍고에요! <i class="fa-regular fa-face-smile"></i>
-                        </span></div>
-                </div>
+              <span
+                >© 2023 Chanryeong Park's Portfolio<br />
+                이 사이트는 비트를 이용하여 제작하였습니다.</span
+              >
+              <div
+                class="carry"
+                data-10800="left: -110%;"
+                data-11500="left: 30%;"
+              >
+                <img src="assets/img/follow.svg" alt="플라밍고 이미지" />
+              </div>
             </div>
+          </div>
+          <div class="right">
+            <img
+              src="assets/img/myflamingo.jpg"
+              alt="내가 찍은 플라밍고 사진"
+            />
+            <button class="like">
+              <i class="fa-solid fa-heart fa-beat"></i>
+              <div class="parrot"></div>
+            </button>
+            <div class="chat">
+              <span>
+                칸쿤에서 제가 직접 찍은 플라밍고에요!
+                <i class="fa-regular fa-face-smile"></i>
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- //footer -->
 
-
     <script type="module" src="assets/js/main.js"></script>
     <script src="https://unpkg.com/split-type"></script>
-
-</body>
-
+  </body>
 </html>
